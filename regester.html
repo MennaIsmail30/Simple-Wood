@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Validation Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="registrationForm" method="post" novalidate>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                <div class="invalid-feedback">
+                    Please enter your first name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                <div class="invalid-feedback">
+                    Please enter your last name.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required minlength="8">
+                <div class="invalid-feedback">
+                    Please enter a password with at least 8 characters.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required
+                    minlength="8">
+                <div class="invalid-feedback">
+                    Please confirm your password.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="d-flex">
+                <button type="submit" class="btn btn-success">Create Account</button>
+                <h5 style="margin-left: 900px; color: gray;">Back</h5>
+            </div>
+        </form>
+    </div>
+
+    <script src="regester.js">
+
+    </script>
+
+</body>
+
+</html>

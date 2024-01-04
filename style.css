@@ -1,0 +1,20 @@
+.intercontainer {
+    background: url(./images/image\ 41.png), lightgray 50% / cover no-repeat;
+
+    /* background-image: url("./images/furimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position: center; */
+}
+.na:hover {
+    color: green;
+}
+/* .img1 {
+    background: url(./images/image\ 19.png), lightgray 50% / cover no-repeat;
+
+    background-blend-mode: darken;
+} */
+.secondcontainer {
+    background: url(./images/image\ 41.png), lightgray 0px -878.674px / 100% 982.318% no-repeat;
+    height: 80px;
+}
