@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <div class="d-block">
+                <div class="d-flex">
+                    <div class="search w-50 ms-5   rounded-pill " style="height: 40px; background-color: white; ">
+                        <p>Search <i class="fa fa-search " aria-hidden="true" style="margin-left: 170px;"></i></p>
+                        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                    </div>
+                    <h6 class="ms-5 " style="color: white;"> Project Name</h6>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle ms-5 " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+
+                        </ul>
+                    </div>
+                    <a href="regester.html" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                            height="23" viewBox="0 0 23 23" fill="none" class="ms-5">
+                            <circle cx="11.5001" cy="11.5" r="9.40833" stroke="white" stroke-width="1.5" />
+                            <path
+                                d="M13.7981 8.4525C13.7981 9.72137 12.7695 10.75 11.5006 10.75C10.2317 10.75 9.20312 9.72137 9.20312 8.4525C9.20312 7.18362 10.2317 6.155 11.5006 6.155C12.7695 6.155 13.7981 7.18362 13.7981 8.4525Z"
+                                stroke="white" stroke-width="1.5" />
+                            <path
+                                d="M6.0293 18.5327C7.0162 15.7569 9.09472 13.8443 11.4992 13.8443C13.9036 13.8443 15.9821 15.7569 16.969 18.5327"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></a>
+                    <!-- <i class="fa fa-user-circle ms-5 mt-5" aria-hidden="true"></i> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="23" viewBox="0 0 23 23" fill="none "
+                        class="ms-5">
+                        <path
+                            d="M20.7314 6.36992C20.4304 5.67282 19.9963 5.04111 19.4534 4.51016C18.9102 3.97762 18.2696 3.55442 17.5667 3.26357C16.8378 2.96079 16.056 2.8058 15.2667 2.80762C14.1594 2.80762 13.079 3.11084 12.1401 3.68359C11.9155 3.82061 11.7021 3.97109 11.5 4.13506C11.2979 3.97109 11.0845 3.82061 10.8599 3.68359C9.921 3.11084 8.84063 2.80762 7.7333 2.80762C6.93594 2.80762 6.16328 2.96035 5.4333 3.26357C4.72803 3.55557 4.09238 3.97559 3.54658 4.51016C3.00302 5.04051 2.56881 5.67237 2.26855 6.36992C1.95635 7.09541 1.79688 7.86582 1.79688 8.65869C1.79688 9.40664 1.94961 10.186 2.25283 10.9789C2.50664 11.6415 2.87051 12.3288 3.33545 13.0229C4.07217 14.1212 5.08516 15.2667 6.34297 16.4279C8.42734 18.3528 10.4915 19.6825 10.5791 19.7364L11.1114 20.0778C11.3473 20.2283 11.6505 20.2283 11.8863 20.0778L12.4187 19.7364C12.5063 19.6803 14.5682 18.3528 16.6548 16.4279C17.9126 15.2667 18.9256 14.1212 19.6623 13.0229C20.1272 12.3288 20.4934 11.6415 20.7449 10.9789C21.0481 10.186 21.2009 9.40664 21.2009 8.65869C21.2031 7.86582 21.0437 7.09541 20.7314 6.36992ZM11.5 18.3012C11.5 18.3012 3.50391 13.1778 3.50391 8.65869C3.50391 6.36992 5.39736 4.51465 7.7333 4.51465C9.3752 4.51465 10.7992 5.43106 11.5 6.76973C12.2008 5.43106 13.6248 4.51465 15.2667 4.51465C17.6026 4.51465 19.4961 6.36992 19.4961 8.65869C19.4961 13.1778 11.5 18.3012 11.5 18.3012Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <br> <a class="na ms-5  " href="#" style="color: white;">Home</a>
+                <a class="ms-5" href="#" style="color: white;">Prodects</a>
+                <a class="ms-5" href="#" style="color: white;">Elements</a>
+                <a class="ms-5" href="#" style="color: white;">Pages</a>
+                <a class="ms-5" href="#" style="color: white;">Shop</a>
+                <a class="ms-5" href="#" style="color: white;">Sale</a>
+            </div>
+        </nav>
+        <!-- <img style=" width: 100%; height: 180px; left: 0px; top: 0px;" src="./images/image 41.png" />
+        <div
+            style=" left: 339px; top: 200px; position: absolute; color: white; font-size: 40px; font-family: Poppins; font-weight: 300; line-height: 48px; word-wrap: break-word">
+            Shopping Cart
+        </div> -->
+        <div class="container2">
+            <img style=" width: 100%; height: 180px; left: 0px; top: 0px;" src="./images/image 41.png" />
+            <div
+                style=" left: 339px; top: 200px; position: absolute; color: white; font-size: 40px; font-family: Poppins; font-weight: 300; line-height: 48px; word-wrap: break-word">
+                Shopping Cart
+            </div>
+            <div style="left: 339px; top: 150px; position: absolute">
+                <div style="margin-left: 40px;">
+                    <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M1 1L5.5 5.5L1 10" stroke="white" />
+                    </svg>
+                </div>
+                <div
+                    style="left: 0px; top: 0px; position: absolute; color: white; font-size: 12px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+                    Home</div>
+
+                <div
+                    style="left: 60px; top: 0px; position: absolute; color: #A7A7A7; font-size: 12px; font-family: Poppins; font-weight: 400; word-wrap: break-word">
+                    Shopping Cart</div>
+            </div>
+
+        </div>
+        <div>
+            <div style="width: 598px; margin-top: 100px; height: 1px;margin-left: 100px; background: #E0E0E0">
+            </div>
+            <div
+                style="left: 251px; top: 353px; position: absolute; color: #828282; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Item</div>
+            <div
+                style="left: 670px; top: 353px; position: absolute; color: #828282; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Price</div>
+            <div
+                style="left: 720px; top: 353px; position: absolute; color: #828282; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Qty</div>
+            <div
+                style="left: 770px; top: 353px; position: absolute; color: #828282; font-size: 14px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                Subtotal</div>
+        </div>
+        <div class="d-block">
+            <div class="d-flex">
+                <div style="width: 170px; height: 170px;margin-left: 100px;margin-top: 20px; background: #F5F5F5">
+                    <img style="width: 110px; height: 110px;margin-left: 30px;margin-top: 30px; "
+                        src="./images/Rectangle 11.png" />
+                </div>
+                <div class="d-block">
+                    <div
+                        style="color: #212121;margin-left: 20px;margin-top: 10px; font-size: 18px; font-family: Poppins; font-weight: 400; text-decoration: underline; word-wrap: break-word">
+                        Simple Wood Chair Collection</div>
+                    <div
+                        style="color: #828282;margin-left: 20px; font-size: 14px; font-family: Poppins; font-weight: 700; line-height: 20px; word-wrap: break-word">
+                        Size:29<br />Color:Green</div>
+                </div>
+                <div
+                    style="color: #212121;margin-left: 20px; font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 47.96px; word-wrap: break-word">
+                    $45.00</div>
+                <div
+                    style="width: 30px;margin-top: 10px;margin-left: 10px; height: 30px;border: solid 1px; text-align: center; color: #212121; font-size: 14px; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word">
+                    1</div>
+                <div
+                    style="color: #212121; font-size: 18px;margin-left: 20px; font-family: Poppins; font-weight: 500; line-height: 47.96px; word-wrap: break-word">
+                    $45.00</div>
+            </div>
+            <div
+                style="color: #828282; font-size: 13px;margin-left: 100px; font-family: Poppins; font-weight: 400; text-decoration: underline; line-height: 30px; word-wrap: break-word">
+                Move to Wishlist</div>
+            <div class="d-flex">
+                <div style="width: 170px; height: 170px;margin-left: 100px;margin-top: 20px; background: #F5F5F5">
+                    <img style="width: 110px; height: 110px;margin-left: 30px;margin-top: 30px; "
+                        src="./images/Rectangle 12.png" />
+                </div>
+                <div class="d-block">
+                    <div
+                        style="color: #212121;margin-left: 20px;margin-top: 10px; font-size: 18px; font-family: Poppins; font-weight: 400; text-decoration: underline; word-wrap: break-word">
+                        Simple Wood Chair Collection</div>
+                    <div
+                        style="color: #828282;margin-left: 20px; font-size: 14px; font-family: Poppins; font-weight: 700; line-height: 20px; word-wrap: break-word">
+                        Size:29<br />Color:Green</div>
+                </div>
+                <div
+                    style="color: #212121;margin-left: 20px; font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 47.96px; word-wrap: break-word">
+                    $45.00</div>
+                <div
+                    style="width: 30px;margin-top: 10px;margin-left: 10px; height: 30px;border: solid 1px; text-align: center; color: #212121; font-size: 14px; font-family: Poppins; font-weight: 400; line-height: 30px; word-wrap: break-word">
+                    1</div>
+                <div
+                    style="color: #212121; font-size: 18px;margin-left: 20px; font-family: Poppins; font-weight: 500; line-height: 47.96px; word-wrap: break-word">
+                    $45.00</div>
+            </div>
+            <span style="margin-left: 600px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="pencil">
+                        <path id="Vector"
+                            d="M20.71 7.04006C21.1 6.65006 21.1 6.00006 20.71 5.63006L18.37 3.29006C18 2.90006 17.35 2.90006 16.96 3.29006L15.12 5.12006L18.87 8.87006L20.71 7.04006ZM3 17.2501V21.0001H6.75L17.81 9.93006L14.06 6.18006L3 17.2501Z"
+                            fill="#828282" />
+                    </g>
+                </svg>
+            </span>
+            <!-- <span style="margin-left: 700px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="delete">
+                        <path id="Vector"
+                            d="M19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4ZM6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19V7H6V19Z"
+                            fill="#828282" />
+                    </g>
+                </svg>
+            </span> -->
+            <span style="width: 24px; height: 24px; margin-left: 30px; position: relative">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="delete">
+                        <path id="Vector"
+                            d="M19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4ZM6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19V7H6V19Z"
+                            fill="#828282" />
+                    </g>
+                </svg>
+            </span>
+            <div style="width: 598px; margin-top: 10px; height: 1px;margin-left: 100px; background: #E0E0E0">
+            </div>
+            <span
+                style="width: 134px; height: 32px;margin-left: 100px;margin-top: 30px; color: #4F4F4F; font-size: 14px; font-family: Roboto Medium; font-weight: 400; word-wrap: break-word">
+                Apply Discount Code
+                <span style="width: 4px; height: 9px; margin-left: 10px; border: 1px #828282 solid">
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" d="M1 5L5.5 1L10 5" stroke="#828282" />
+                    </svg>
+                </span>
+            </span>
+            <div class="d-flex">
+                <div
+                    style="width: 200px; height: 40px; color: #212121;border: solid 1px; font-size: 14px;margin-left: 100px;margin-top: 20px; font-family: Poppins; font-weight: 400; line-height: 20.65px; word-wrap: break-word">
+                    SALE2020</div>
+                <div
+                    style="width: 200px; height: 40px;background-color: black; color: #FFFFFF;border: solid 1px; font-size: 14px;margin-left: 0px;margin-top: 20px; font-family: Poppins; font-weight: 400; line-height: 20.65px; word-wrap: break-word">
+                    Apply Discount</div>
+                <div
+                    style="width: 191px; height: 40px; text-align: center; color: #212121; font-size: 14px; font-family: Poppins; font-weight: 700; line-height: 20px; word-wrap: break-word">
+                    Update Shopping Cart</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
