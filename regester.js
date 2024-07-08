@@ -19,3 +19,10 @@
         false
     );
 })();
+document.forms.addEventListener("submit", function () {
+    var inputs = document.getElementsByTagName("input");
+    localStorage.setItem("firstName", inputs[0].value);
+    localStorage.setItem("lastName", inputs[1].value);
+    localStorage.setItem("password", inputs[2].value);
+    location.href = "regester.html";
+});
